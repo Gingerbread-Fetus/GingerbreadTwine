@@ -1,0 +1,91 @@
+<tw-storydata name="A Memory of a Galaxy" startnode="1" creator="Twine" creator-version="2.2.1" ifid="960C95D2-9944-415E-9CE6-FE78C3898E63" zoom="1" format="Harlowe" format-version="2.1.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">
+
+
+</style><script role="script" id="twine-user-script" type="text/twine-javascript">
+
+
+</script><tw-passagedata pid="1" name="Prologue" tags="" position="401,15" size="100,100">(set: $pilot to &quot;somePil&quot;)
+(set: $engineer to &quot;someEng&quot;)
+(set: $medic to &quot;someDoc&quot;)
+(set: $origin to &quot;nada&quot;)
+(set: $specialty to &quot;nil&quot;)
+
+Centuries ago, everyone believed that the galaxy was experiencing undending peace. With no end in sight to its prosperity. But that end did come. And now, nobody really seems to agree on how it happened. By the time that you were born, most people were too busy scraping by to care.
+
+Choose your origin:
+[[Former Slave-&gt;Former Slave]]
+[[Merchant-&gt;Merchant]]
+[[Escaped Thrall(Cyborg)-&gt;Escaped Thrall]]
+[[Smuggler-&gt;Smuggler]]</tw-passagedata><tw-passagedata pid="2" name="Specialty" tags="" position="399,301" size="100,100">Your specialty will give you certain bonuses and opportunities.
+
+[[Paleotech]]
+[[Security Chief]]
+[[Mixologist]]</tw-passagedata><tw-passagedata pid="3" name="Former Slave" tags="" position="176,165" size="100,100">Former Slave: Slavery is accepted now in more parts of the galaxy than it isn&#39;t. You were one of the lucky few to escape to a free system.
+(set: $origin to &quot;slave&quot;)
+[[Continue-&gt;Specialty]] 
+[[Go Back-&gt;Prologue]] </tw-passagedata><tw-passagedata pid="4" name="Merchant" tags="" position="296,165" size="100,100">Merchant: Common merchants are both the key suppliers to settlements everywhere, and the key targets of pirates. To be a successful merchant means that you&#39;re either incredibly skilled or incredibly lucky, but preferably both. Your stock of goods makes you a valued partner for many, and your business knowledge gives you maps of popular trade routes between star systems.
+(set: $origin to &quot;merchant&quot;)
+[[Continue-&gt;Specialty]] 
+[[Go Back-&gt;Prologue]] </tw-passagedata><tw-passagedata pid="5" name="Escaped Thrall" tags="" position="504,163" size="100,100">Escaped Thrall(Cyborg): Cyborgs, while rare, are still more common than the thralls that have managed to break away and retain personalities apart form the synthetic collectives they once belonged to.
+(set: $origin to &quot;thrall&quot;)
+[[Continue-&gt;Specialty]] 
+[[Go Back-&gt;Prologue]] </tw-passagedata><tw-passagedata pid="6" name="Smuggler" tags="" position="626,165" size="100,100">Smuggler: Those who know how to get things and where to get them are valuable assets to any team. You also enjoy a reputation of discretion and charasmatic negotiation.
+(set: $origin to &quot;smuggler&quot;)
+[[Continue-&gt;Specialty]] 
+[[Go Back-&gt;Prologue]] </tw-passagedata><tw-passagedata pid="7" name="Paleotech" tags="" position="256,437" size="100,100">(set: $specialty to &quot;paleotech&quot;)
+Paleotech like you are those who have taken an interest in the study, collection, and use of the technological artifacts of the old galactic government.
+[[Continue-&gt;Beginning]]
+[[Go Back-&gt;Specialty]] </tw-passagedata><tw-passagedata pid="8" name="Security Chief" tags="" position="401,437" size="100,100">(set: $specialty to &quot;security&quot;)
+Security experts don&#39;t just keep the ship working in order. You have a greater knowledge of ships weapons systems, anti-personell weapons, and ship classes, than the average person.
+[[Continue-&gt;Beginning]]
+[[Go Back-&gt;Specialty]] </tw-passagedata><tw-passagedata pid="9" name="Mixologist" tags="" position="556,437" size="100,100">(set: $specialty to &quot;mixologist&quot;)
+Once the word used for hip bartenders, this title has now become synonymous with the mastery of the mysterious elements of the universe. Exotic matter and foreign materials bend to the will of a skilled mixologist.
+[[Continue-&gt;Beginning]]
+[[Go Back-&gt;Specialty]] </tw-passagedata><tw-passagedata pid="10" name="Beginning" tags="TODO" position="407,576" size="100,100">You have been hired for a very peculiar contract. It would seem that a collector would like for you to put together a team and travel into an old galactic government capital to recover an old computer. While most precursor computers have little data of use, depending on their state of decay, they have value to collectors.
+
+Theseus-01, or T-1 to the collection of wayward people who somehow call it home, takes its name from a constellation that was allegedly visible from the human homeworld. And it is the home to The White Bull, a dimly lit bar that is still dusty and dirty, no matter how many sterilization checks they do on visitors to the station. Dirty as any earthbound pub that you&#39;ve ever been to at least. The White Bull is also the closest place where you might be able to pick up the crew members that you need. You approach the notification board, which flashes to life as you approach its proximity monitor.
+
+The average crew for a ship of your size is going to need a pilot, and engineer, and a medic.
+
+[[Begin Browsing for a Pilot-&gt;Pilot]]</tw-passagedata><tw-passagedata pid="11" name="Pilot" tags="" position="410,726" size="100,100">There are only a few names on the list that meet your needs for a pilot
+
+Isani comes from a humanoid race of forest dwellers on the other end of the galaxy. With extremely lithe bodies and incredibly tough bones, their resilience often gives them the feeling of being invincible even long into their adulthood. As such, Dasos are characteristically known as impulsive risk takers. Culturally, the prestige of an individual is tied primarily to their skill, and not much else. Isani herself set out with a mercenary group that took her across the galaxy, from rim to rim she claims, a claim backed up by the astonishing number of pilots for hire who know her name. However, incident after incident of her disobeying orders blots her record, and perhaps explains her retirement from her previous company.
+
+Mikah is a dwarf who used to work for a union of traders once known as the Union of Navis Argo. They came to be known as The Five Kings of Hydra, and are currently one of the largest slave trading organizations known in this sector of space. The early termination of his contract with this group is something he prefers not to talk about.
+
+Lucky is a peculiar synthetic. There is no note on his record indicating the date he was constructed on. Or where he came from. The farthest back that his record goes simply states that his career as a pilot began as a cab driver. But even the name of the cab service is redacted. Every date from there on is distinguished with highly detailed accounts of Lucky working all sorts of unlikely heroic miracles, and yet keeping his registration precisely up to date. He is also still a licensed cab driver.
+
+(link: &quot;Isani&quot;)[(set: $pilot to &quot;isani&quot;)(goto: &quot;Engineer&quot;)]
+(link: &quot;Mikah&quot;)[(set: $pilot to &quot;mikah&quot;)(goto: &quot;Engineer&quot;)]
+(link: &quot;Lucky&quot;)[(set: $pilot to &quot;lucky&quot;)(goto: &quot;Engineer&quot;)]</tw-passagedata><tw-passagedata pid="12" name="Engineer" tags="" position="410,848" size="100,100">It should go without saying that the job of an engineer is highly important. There are many things that can go wrong on any starship that often requirre improvisation to solve. Highly skilled engineers that know how to bypass any malfunction or issue are always needed.
+
+Drake, which seems to be his chosen name and not his given one, is a rare species with an appearance much like a quadrapedal chimpanzee, with feet-hands at the end of his great long legs. Paired with two long strong arms on his muscular torso. He has a natural ability to control each of these limbs independently, a useful trait that aids in his mastery of multitasking. Most of his body is covered with dark leathery skin, the rest with a dark fur that has a purple color to it. There isn&#39;t much personal history to his profile,, other than a list of ships he served on, all of which are listed as slave ships where he presumably worked by force.
+
+Jirard grew up on a rimworld whose government fell apart before he was born. Society there was an odd mix of trabalism and scavenging for goods. Those who knew how to put them together the best were considered the most valued members of any clan. Jirard left on one of the few ships that ever stopped by the backwoods planet, and grewa reputation with its crew for his engineering skill and his ability to make use of whatever parts were just laying around.
+
+Lucius has a glowing record of service, with many captains on his record statnig his loyalty to whoever is paying him is very rarely in question. He requests more than a little pay extra than the rest, but does come at a recommendation of extremely high skill.
+
+(link: &quot;Drake&quot;)[(set: $engineer to &quot;drake&quot;)(goto: &quot;Medic&quot;)]
+(link: &quot;Jirard&quot;)[(set: $engineer to &quot;mikah&quot;)(goto: &quot;Medic&quot;)]
+(link: &quot;Lucius&quot;)[(set: $engineer to &quot;lucky&quot;)(goto: &quot;Medic&quot;)]</tw-passagedata><tw-passagedata pid="13" name="Medic" tags="" position="409,960" size="100,100">A medic will handle any mistakes that result in serious injury. Some people believe that autodocs or medigel are all they need out there. Until they encounter a rare disease or an exotic parasite that makes short work of them.
+
+Gaist is tall and built, his body covered with hard grey scales from his head to his tail. He has a reputation of being tough and detached, but highly efficient above all else in his work.
+
+Kouro is thin, but her thick black fur makes her appear larger than she actually is. There is a stern look always on her face, and her considerable height means that she is usually looking down on her patients.
+
+Axel is a former scientist for who travels back and forth across the galaxy collecting samples from as many species as she can. To facilitate this research, she&#39;s taken up work on multiple ships, where she&#39;s earned a reputation for being experimental in her methods.
+
+(link: &quot;Gaist&quot;)[(set: $medic to &quot;gaist&quot;)(goto: &quot;Passage 1&quot;)]
+(link: &quot;Kouro&quot;)[(set: $medic to &quot;kouro&quot;)(goto: &quot;Passage 1&quot;)]
+(link: &quot;Axel&quot;)[(set: $medic to &quot;axel&quot;)(goto: &quot;Passage 1&quot;)]</tw-passagedata><tw-passagedata pid="14" name="Passage 1" tags="" position="409,1068" size="100,100">The first step of your journey will take you to Alexandria-One, a former capitol planet for the galactic empire . Most buildings there are now overrun with jungle, or overtaken by heavy flooding. Your directions are highly specific, down to exactly what building and what room you need to get into. However, the instructions are less specific about what the device you are to retrieve from these ruins actually does. In fact, they mention you should look for &quot;Object 43-H&quot; and nothing else. The specific characteristics of this device are also described.
+
+The first step to Alexandria is through the Scavengers territory. Typically benign salvagers who strip abandoned empire-era ships for materials stalk this zone. The wreckage of which is dangerously thick. They&#39;ve formed a loose collective to ward off pirates, but are very welcome to visitors. Especially if they have any objects of interest for trade. They don&#39;t often communicate outside of their own territory, preferring to wait for merchants and travellers to come to the relative safety of their home.
+
+[[Seek the hospitality of the Scavengers.]]</tw-passagedata><tw-passagedata pid="15" name="Seek the hospitality of the Scavengers." tags="" position="402,1194" size="100,100">As your ship jumps into the system that marks the edge of Scavenger space, there&#39;s something strange continuously beeping on your ship sensors. The object seems to be a derelict ship, presumably belonging to a Scavenger crew, now lifelessly drifing in orbit around a planetoid in this system&#39;s astroid belt. Given its size it would appear to be nothing more than a small mining vessel, likely mass-produced centuries ago. What do you do?
+
+[[Scan the ship for life signs and other signals.-&gt;AwakenedDrone]]
+(if: $pilot is &quot;lucky&quot;)[ [[Lucky suddenly lurches to life.-&gt;Lucky Reacts]]]\
+
+(if: $specialty is &quot;paleotech&quot;)[ [[You realize something about the ship...-&gt;paleotechDrone]] ]\
+
+(if: $origin is &quot;thrall&quot;)[ [[You hear something...-&gt;cyborgDrone]] ]</tw-passagedata><tw-passagedata pid="16" name="AwakenedDrone" tags="" position="355,1318" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="17" name="Lucky Reacts" tags="" position="473,1316" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="18" name="paleotechDrone" tags="" position="235,1314" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="19" name="cyborgDrone" tags="" position="598,1315" size="100,100">Double-click this passage to edit it.</tw-passagedata></tw-storydata>
